@@ -1,5 +1,6 @@
 # Amethyst
 
+[![Build Status](https://travis-ci.org/illyasviel/amethyst.svg?branch=master)](https://travis-ci.org/illyasviel/amethyst)
 [![License](https://img.shields.io/github/license/illyasviel/amethyst.svg?maxAge=86400)](./LICENSE)
 [![Version](https://img.shields.io/jetbrains/plugin/v/12731.svg)](https://plugins.jetbrains.com/plugin/12731-amethyst)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/12731.svg)](https://plugins.jetbrains.com/plugin/12731-amethyst)
