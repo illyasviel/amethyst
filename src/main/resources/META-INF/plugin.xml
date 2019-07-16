@@ -1,0 +1,37 @@
+<idea-plugin>
+    <id>org.illyasviel.amethyst</id>
+    <name>Amethyst</name>
+    <vendor url="https://github.com/illyasviel/amethyst">olOwOlo</vendor>
+
+    <description><![CDATA[
+    <p>Clean Clojure Namespace Declarations With An Opinionated Style Guide.</p>
+    <ul>
+        <li>Eliminate <code>:use</code> clauses in favor of <code>refer</code> <code>:all</code>.</li>
+        <li>Sort required libraries, imports and vectors of referred symbols</li>
+        <li>Remove any duplication in the <code>:require</code> and <code>:import</code> form.</li>
+    </ul>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <application-components>
+        <component>
+            <implementation-class>org.illyasviel.amethyst.ClojureLoader</implementation-class>
+        </component>
+    </application-components>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="org.illyasviel.amethyst.actions.CleanNsAction"
+                class="org.illyasviel.amethyst.actions.CleanNsAction" text="Clean ns"
+                description="Opinionated Style Guide for Clojure Namespace Declarations">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
