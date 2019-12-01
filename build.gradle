@@ -1,7 +1,7 @@
 plugins {
     id 'gradle-clojure.clojure' version '0.4.0'
-    id 'org.jetbrains.intellij' version '0.4.9'
-    id "org.jetbrains.kotlin.jvm" version "1.3.41"
+    id 'org.jetbrains.intellij' version '0.4.14'
+    id "org.jetbrains.kotlin.jvm" version "1.3.61"
 }
 
 group 'org.illyasviel'
@@ -37,7 +37,7 @@ dependencies {
 intellij {
     version intellijPlatformVersion
     type 'IC'
-    downloadSources = System.getenv("CI") == null
+    downloadSources = false
 }
 
 patchPluginXml {
