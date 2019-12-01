@@ -27,6 +27,7 @@ configurations {
 
 dependencies {
     implementation 'org.clojure:clojure:1.10.1'
+    implementation 'org.clojure:tools.namespace:0.3.1'
     implementation 'refactor-nrepl:refactor-nrepl:2.4.0'
     implementation 'cider:cider-nrepl:0.18.0'
     implementation 'nrepl:nrepl:0.6.0'
