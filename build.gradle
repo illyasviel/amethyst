@@ -65,3 +65,11 @@ clojure.builds {
         aotAll()
     }
 }
+
+import org.illyasviel.amethyst.InstrumentClojure
+
+compilePreClojure {
+    doLast {
+        InstrumentClojure.INSTANCE.instrument(sourceSets.pre.output)
+    }
+}
