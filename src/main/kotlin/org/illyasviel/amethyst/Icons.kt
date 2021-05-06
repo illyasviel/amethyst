@@ -9,5 +9,5 @@ package org.illyasviel.amethyst
 import com.intellij.openapi.util.IconLoader
 
 object Icons {
-    val defaultIcon = IconLoader.getIcon("/icons/clojure_icon_16x16.png")
+    val defaultIcon = IconLoader.getIcon("/icons/clojure_icon_16x16.png", Icons::class.java)
 }
